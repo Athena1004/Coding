@@ -1,0 +1,86 @@
+#include<stdio.h>
+
+int main()
+{
+    //用来保存输入的十六进制字符
+    unsigned char ch;
+    //十六进制对应的数值
+    int d;
+    scanf("%c", ch);
+    if(ch == '0')
+    {
+        d = 0;
+    }
+    if(ch == '1')
+    {
+        d = 1;
+    }
+    if(ch == '2')
+    {
+        d = 2;
+    }
+    if(ch == '3')
+    {
+        d = 3;
+    }
+    if(ch == '4')
+    {
+        d = 4;
+    }
+    if(ch == '5')
+    {
+        d = 5;
+    }
+    if(ch == '6')
+    {
+        d = 6;
+    }
+    if(ch == '7')
+    {
+        d = 7;
+    }
+    if(ch == '8')
+    {
+        d = 8;
+    }
+    if(ch == '9')
+    {
+        d = 9;
+    }
+    if(ch == 'a' || ch == 'A')
+    {
+        d = 10;
+    }
+    if(ch == 'b' || ch == 'B')
+    {
+        d = 11;
+    }
+    if(ch == 'c' || ch == 'C')
+    {
+        d = 12;
+    }
+    if(ch == 'd'|| ch == 'D')
+    {
+        d = 13;
+    }
+    if(ch == 'e' || ch == 'E')
+    {
+        d = 14;
+    }
+    if(ch == 'f' || ch == 'F') 
+    {
+        d = 15;
+    }
+    /*
+    switch( ch )
+    {
+        case '0':
+            d= 0;
+            break;
+        case '0':
+            d= 0;
+            break;
+        ...
+    }*/
+
+}

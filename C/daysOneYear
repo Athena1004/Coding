@@ -1,0 +1,95 @@
+#include<stdio.h>
+
+/*
+输入一个日期，求访日期至年末有多少天
+eq：2022,6,25【6+7+8+9+10+11+12月天数 - 25】
+*/
+int main()
+{
+    int y, m ,d;
+    int days = 0;
+    scanf("%d%d%d", &y, &m, &d);
+    switch(m)
+    {
+        case 1:
+            days += 31;
+        case 2:
+            if((y%4 == 0 && y% 100!= 0)|| (y % 400 == 0))
+            {
+                days += 29;
+            }
+            else
+            {
+                days += 30;
+            }
+        case 3:
+            days += 31;
+        case 4:
+            days += 30;
+        case 5:
+            days += 31;
+        case 6:
+            days += 30;
+        case 7:
+            days += 31;
+        case 8:
+            days += 31;
+        case 9:
+            days += 30;
+        case 10:
+            days += 31;
+        case 11:
+            days += 30;
+        case 12:
+            days += 31
+    }
+        days = days -d;
+
+}
+
+/*
+    输入一个日期，求该日期至年初的天数
+    eq: 2022,6,25 到年初的天数：【1+2+3+4+5月天数+25】
+*/
+int main()
+{
+    int y, m, d;
+    int days = 0;
+    scanf("%d%d%d", &y, &m, &d);
+    switch(m-1)
+    {
+        case 0:
+            days += 0;
+        case 1:
+            days += 31;
+        case 2:
+            if((y%4 == 0 && y% 100!= 0)|| (y % 400 == 0))
+            {
+                days += 29;
+            }
+            else
+            {
+                days += 30;
+            }
+        case 3:
+            days += 31;
+        case 4:
+            days += 30;
+        case 5:
+            days += 31;
+        case 6:
+            days += 30;
+        case 7:
+            days += 31;
+        case 8:
+            days += 31;
+        case 9:
+            days += 30;
+        case 10:
+            days += 31;
+        case 11:
+            days += 30;
+    }
+        days = days + d;
+
+}
