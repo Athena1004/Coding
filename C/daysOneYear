@@ -69,7 +69,7 @@ int main()
             }
             else
             {
-                days += 30;
+                days += 28;
             }
         case 3:
             days += 31;
