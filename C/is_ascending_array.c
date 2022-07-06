@@ -23,7 +23,7 @@ int main()
             flag = 0;
         }
     }
-   if(flag)
+   if(flag) 
    {
         printf("it is  a ascending array");
    }
