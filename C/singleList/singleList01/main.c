@@ -9,7 +9,7 @@
  * @return Node* 返回创建的这个单链表的第一个结点指针
  * eq: input 1 3 5 7 2 4 0
  */
-Node* Create_linkedList(void)
+Node* Create_linkedList_v1(void)
 {
     int d;//保存每次用户输入的数据，约定输入0结束
     Node *first = NULL;//指向链表的第一个结点
@@ -58,7 +58,7 @@ void print_list(Node *p)
 
 int main()
 {
-    Node *h = Create_linkedList(); 
+    Node *h = Create_linkedList_v1(); 
     print_list(h);
     return 0;
 }

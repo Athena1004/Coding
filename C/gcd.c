@@ -19,7 +19,7 @@ int gcd(int m, int n)
 
 int gcd(int m, int n)
 {
-    int min = m < n? n : m;
+    int min = m < n? m : n;
     int a;
     for(a = min; a > 0; a--)
     {
